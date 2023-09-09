@@ -3,7 +3,7 @@
 <!-- This repository contains a pytorch lightning implementation for the ICCV 2021 paper: [SC-NeRF: Self-Correcting Neural Radiance Field with Sparse Views](https://arxiv.org/abs/2103.15595).  -->
 We propose a novel end-to-end network for synthesizing realistic images from sparse input views. We firstly propose a geometry correction module based on multi-head attention. It can address the issue of black artifacts in rendered views, caused by inconsistencies in scale and structure between training and testing scenes. Building on the geometry correction module, we also design an appearance correction module to alleviate boundary blank and ghosting artifacts in rendered views caused by relatively large viewpoint changes. We validate the effectiveness of our model on four datasets, including Blender, LLFF, DTU, and Spaces. Notably, on the outdoor scenes in the Spaces dataset, our model outperforms MVSNeRF by 34.17% in terms of PSNR, and IBRNet by 19.9%.<br><br>
 
-![Pipeline](./configs/pipline.png)
+![Pipeline](configs/pipline.png)
 
 ## Installation
 
@@ -78,24 +78,24 @@ camera to world or world to camera in opencv format) and modify the rendering sc
 
 ## Results
 ### Qualitative analysis(The result of the weights trained in DTU datasets)
-![](./configs/dtu.png)
+![](configs/dtu.png)
 ### Quantitative analysis(The result of the weights trained in DTU datasets)
-![](./configs/result1.png)
+![](configs/result1.png)
 Rendering quality comparison at object level and indoor data. We show the visual comparison results of our method and other NeRF-based generalization methods on 3 different test sets. For each data set, we select two sets of scenarios to show. From the red circle, it can be observed that PixelNeRF has a poorer rendering effect. From the blue circle, it can be seen that IBRNet lacks sufficient detail in handling edge details. From the green circle, it can be noticed that MVSNeRF is slightly inferior in rendering background details.
 ### Qualitative analysis(The result of the weights trained in DTU datasets)
-![](./configs/spaces.png)
+![](configs/spaces.png)
 ### Quantitative analysis(The result of the weights trained in DTU datasets)
-![](./configs/result2.png)
+![](configs/result2.png)
 
 
 ### Qualitative analysis(Generalization research experiment)
-![](./configs/spaces.png)
+![](configs/spaces.png)
 ### Quantitative analysis(Generalization research experiment)
-![](./configs/result2.png)
+![](configs/result2.png)
 Rendering quality comparison at outdoor data. We show the results of a visual comparison of our method with two state-of-the-art methods on the Space dataset for three settings of different difficulty levels. From the red box, it can be observed that as the viewing angle increases, IBRNet produces blank spaces at the edges of the rendered image. From the blue box, it can be seen that MVSNeRF exhibits black pseudo-shadows in areas such as the sky. Our method can effectively solve these issues in outdoor scenes.
 
 ### Qualitative analysis(Abalation experiment)
-![](./configs/spart.png)
+![](configs/spart.png)
 ### Quantitative analysis(Abalation experiment)
-![](./configs/result3.png)
+![](configs/result3.png)
 We show the visualization results of adding geometry correction module and appearance correction module on Baseline. We mark the area of our concern with a box to highlight problems such as rendering holes and artifact transfer.
