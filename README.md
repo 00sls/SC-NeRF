@@ -79,38 +79,38 @@ camera to world or world to camera in opencv format) and modify the rendering sc
 ## Results
 ### Qualitative analysis(The result of the weights trained in DTU datasets)
 
-![](configs/dtu.png)
+![1](configs/dtu.png)
 
 ### Quantitative analysis(The result of the weights trained in DTU datasets)
 
-![](configs/result1.png)
+![1](configs/result1.png)
 
 Rendering quality comparison at object level and indoor data. We show the visual comparison results of our method and other NeRF-based generalization methods on 3 different test sets. For each data set, we select two sets of scenarios to show. From the red circle, it can be observed that PixelNeRF has a poorer rendering effect. From the blue circle, it can be seen that IBRNet lacks sufficient detail in handling edge details. From the green circle, it can be noticed that MVSNeRF is slightly inferior in rendering background details.
 ### Qualitative analysis(The result of the weights trained in DTU datasets)
 
-![](configs/spaces.png)
+![2](configs/spaces.png)
 
 ### Quantitative analysis(The result of the weights trained in DTU datasets)
 
-![](configs/result2.png)
+![2](configs/result2.png)
 
 
 ### Qualitative analysis(Generalization research experiment)
 
-![](configs/spaces.png)
+![3](configs/spaces.png)
 
 ### Quantitative analysis(Generalization research experiment)
 
-![](configs/result2.png)
+![3](configs/result2.png)
 
 Rendering quality comparison at outdoor data. We show the results of a visual comparison of our method with two state-of-the-art methods on the Space dataset for three settings of different difficulty levels. From the red box, it can be observed that as the viewing angle increases, IBRNet produces blank spaces at the edges of the rendered image. From the blue box, it can be seen that MVSNeRF exhibits black pseudo-shadows in areas such as the sky. Our method can effectively solve these issues in outdoor scenes.
 
 ### Qualitative analysis(Abalation experiment)
 
-![](configs/spart.png)
+![4](configs/spart.png)
 
 ### Quantitative analysis(Abalation experiment)
 
-![](configs/result3.png)
+![4](configs/result3.png)
 
 We show the visualization results of adding geometry correction module and appearance correction module on Baseline. We mark the area of our concern with a box to highlight problems such as rendering holes and artifact transfer.

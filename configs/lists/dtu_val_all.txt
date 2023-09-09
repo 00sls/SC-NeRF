@@ -1,3 +1,0 @@
-scan1
-scan8
-scan21
