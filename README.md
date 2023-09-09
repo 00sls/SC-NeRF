@@ -76,10 +76,6 @@ with the `renderer-video.ipynb`. if you want to use your own data,
 please using the right hand coordinate system (intrinsic, nearfar and extrinsic either with
 camera to world or world to camera in opencv format) and modify the rendering scipts.
 
-After 10k iterations (~ 15min), you should have videos like this:
-
-![finetuned](https://user-images.githubusercontent.com/16453770/124207013-15b75800-db17-11eb-8d96-e8dbe4181c98.gif)
-
 ## Results
 ### Qualitative analysis(The result of the weights trained in DTU datasets)
 ![](./configs/dtu.png)
@@ -103,32 +99,3 @@ Rendering quality comparison at outdoor data. We show the results of a visual co
 ### Quantitative analysis(Abalation experiment)
 ![](./configs/result3.png)
 We show the visualization results of adding geometry correction module and appearance correction module on Baseline. We mark the area of our concern with a box to highlight problems such as rendering holes and artifact transfer.
-<!-- ## Citation
-If you find our code or paper helps, please consider citing:
-```
-@article{chen2021mvsnerf,
-  title={MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View Stereo},
-  author={Chen, Anpei and Xu, Zexiang and Zhao, Fuqiang and Zhang, Xiaoshuai and Xiang, Fanbo and Yu, Jingyi and Su, Hao},
-  journal={arXiv preprint arXiv:2103.15595},
-  year={2021}
-}
-``` -->
-
-<!-- Big thanks to [**CasMVSNet_pl**](https://github.com/kwea123/CasMVSNet_pl), our code is partially
-borrowing from them.
-
-## Relevant Works
-[**MVSNet: Depth Inference for Unstructured Multi-view Stereo (ECCV 2018)**](https://arxiv.org/abs/1804.02505)<br>
-Yao Yao, Zixin Luo, Shiwei Li, Tian Fang, Long Quan
-
-[**Cascade Cost Volume for High-Resolution Multi-View Stereo and Stereo Matching (CVPR 2020)**](https://arxiv.org/abs/1912.06378)<br>
-Xiaodong Gu, Zhiwen Fan, Zuozhuo Dai, Siyu Zhu, Feitong Tan, Ping Tan
-
-[**NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis (ECCV 2020)**](http://www.matthewtancik.com/nerf)<br>
-Ben Mildenhall, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, Ren Ng
-
-[**IBRNet: Learning Multi-View Image-Based Rendering (CVPR 2021)**](https://ibrnet.github.io/)<br>
-Qianqian Wang, Zhicheng Wang, Kyle Genova, Pratul Srinivasan, Howard Zhou, Jonathan T. Barron, Ricardo Martin-Brualla, Noah Snavely, Thomas Funkhouser
-
-[**PixelNeRF: Neural Radiance Fields from One or Few Images (CVPR 2021)**](https://alexyu.net/pixelnerf/)<br>
-Alex Yu, Vickie Ye, Matthew Tancik, Angjoo Kanazawa -->
